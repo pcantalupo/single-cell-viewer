@@ -12,6 +12,16 @@ After downloading the code the shiny application can be launched from the 'shiny
 <pre>shiny::runApp('shiny_app')</pre>
 
 ---
+### Shiny-server Docker image to run single-cell-viewer
+Single-cell-viewer shiny app can also be launched from the docker image [virushunter/shiny-scv](https://hub.docker.com/r/virushunter/shiny-scv) that was created from the `Dockerfile`. In order to run single-cell-viewer using the docker image, please install Docker from docker.com. Then execute the following commands:
+
+```
+docker pull virushunter/shiny-scv
+docker run --rm -p 3838:3838 -v ~/tmp/var/log/shiny-server/shiny-scv:/var/log/shiny-server/ virushunter/shiny-scv
+```
+
+Then open brower window and go to `http://localhost:3838/shiny_app`. Then upload your properly formated Seurat object as per the specifications of single-cell-viewer (see Creating Compatible Seurat Objects below)
+
 
 ### Demo Dataset and Script
 
