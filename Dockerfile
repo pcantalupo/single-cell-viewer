@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install --yes \
 RUN git clone https://github.com/neuhausi/single-cell-viewer
 
 RUN cp -r /single-cell-viewer/shiny_app /srv/shiny-server/
+RUN mv /srv/shiny-server/shiny_app /srv/shiny-server/single-cell-viewer
+RUN chmod 777 /srv/shiny-server/single-cell-viewer
 
-RUN chmod 777 /srv/shiny-server/shiny_app
 
