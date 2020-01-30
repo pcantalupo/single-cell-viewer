@@ -20,7 +20,7 @@ docker pull virushunter/shiny-scv
 docker run --rm -p 3838:3838 -v ~/tmp/var/log/shiny-server/shiny-scv:/var/log/shiny-server/ virushunter/shiny-scv
 ```
 
-Then open brower window and go to `http://localhost:3838/shiny_app`. Then upload your properly formated Seurat object as per the specifications of single-cell-viewer (see Creating Compatible Seurat Objects below)
+Then open brower window and go to `http://localhost:3838/single-cell-viewer`. Then upload your properly formated Seurat object as per the specifications of single-cell-viewer (see Creating Compatible Seurat Objects below)
 
 
 ### Demo Dataset and Script
